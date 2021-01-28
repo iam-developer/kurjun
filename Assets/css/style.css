@@ -136,15 +136,16 @@ ul li {
   }
   .header--content {
     position: absolute;
-    top: 20%;
+    top: 16%;
     left: 50%;
     -webkit-transform: translate(-50%, 0%);
         -ms-transform: translate(-50%, 0%);
             transform: translate(-50%, 0%);
     z-index: 3;
+    text-align: center;
   }
   .kurjun--content--img {
-    max-width: 100%;
+    max-width: 43%;
   }
   /* Главная страница */
   #header {
@@ -200,7 +201,7 @@ ul li {
   }
   #content {
       position: relative;
-      top: 250px;
+      top: 320px;
       z-index: 4;
   }
   .content--block--desc {
