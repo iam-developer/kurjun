@@ -6,11 +6,16 @@
     <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="Assets/css/slick.css">
     <link rel="stylesheet" href="Assets/css/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" integrity="sha512-nIm/JGUwrzblLex/meoxJSPdAKQOe2bLhnrZ81g5Jbh519z8GFJIWu87WAhBH+RAyGbM4+U3S2h+kL5JoV6/wA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="Assets/css/style.css">
     <link rel="stylesheet" href="Assets/css/media.css">
     <title>Kurjun-Invest - 🔰Объединенная Торговая 🔹Online Площадка 🏪 Все магазины и услуги в одном приложении</title>
 </head>
 <body>
+    <!-- <a href="#popup"  class="popup-link">Открыть попап</a>
+    <div id="popup" class="mfp-hide">
+        <img src="Assets/img/icon/1.jpg" class="img-fluid" alt="">
+    </div> -->
     <div class="soc--links d-flex justify-content-end align-items-center">
         <a class="soc--icon1" href="#"><img class="icon--img" src="Assets/img/social_icons/whastapp.png" alt=""></a>
         <a class="soc--icon2" href="#"><img class="icon--img" src="Assets/img/social_icons/instagram.png" alt=""></a>
@@ -270,97 +275,258 @@
     <section id="products" class="screen">
         <div class="container products--cont">
             <div class="products--container d-flex justify-content-between align-items-start">
-                <div class="filter">Фильтр</div>
+                <div class="filter">
+                    <h3 class="filter--title">Фильтры</h3>
+                    <input class="keyword" type="text" placeholder="Ключевое слово">
+                    <p class="filter--txt">Выберите область</p>
+                    <select name="" id="choose--region">
+                        <option value="">Выберите область</option>
+                        <option value="">г. Бишкек</option>
+                        <option value="">г. Ош</option>
+                        <option value="">Баткен</option>
+                        <option value="">Жалал-Абад</option>
+                        <option value="">Нарын</option>
+                        <option value="">Талас</option>
+                        <option value="">Чуй</option>
+                        <option value="">Иссык-Куль</option>
+                    </select>
+                    <p class="filter--txt">Выберите район</p>
+                    <select name="" id="choose--region">
+                        <option value="">Выберите район</option>
+                        <option value="">Аламедин 1</option>
+                        <option value="">ЦУМ</option>
+                        <option value="">Ошский рынок</option>
+                        <option value="">Филармония</option>
+                        <option value="">Восток-5</option>
+                        <option value="">Асанбай</option>
+                        <option value="">Орто-Сай</option>
+                        <option value="">Мед академия</option>
+                        <option value="">Политех</option>
+                        <option value="">Джал</option>
+                        <option value="">Аламединский рынок</option>
+                    </select>
+                    <p class="filter--txt">Выберите категорию</p>
+                    <select name="" id="choose--region">
+                        <option value="">Выберите категорию</option>
+                        <option value="">Авто-Мир</option>
+                        <option value="">Авто сервис</option>
+                        <option value="">Всё для бизнеса</option>
+                        <option value="">Детский мир</option>
+                        <option value="">Дом & Сад</option>
+                        <option value="">Кайе & Рестораны</option>
+                        <option value="">Компьютеры & Оргтехники</option>
+                        <option value="">Кондитерский & Пекарная</option>
+                        <option value="">Мебели</option>
+                        <option value="">Медицина & Аптеки</option>
+                        <option value="">Мир животных</option>
+                        <option value="">Мир красоты</option>
+                        <option value="">Мир одежды</option>
+                        <option value="">Недвижимость</option>
+                        <option value="">Образование</option>
+                        <option value="">Оптова продажа</option>
+                        <option value="">Отдых & Развлечение</option>
+                        <option value="">Отдых на ИК</option>
+                        <option value="">Продукты питания</option>
+                        <option value="">Путеществия & Авиабилеты</option>
+                        <option value="">Реклама & Полиграфия</option>
+                        <option value="">Спорт & Хобби</option>
+                        <option value="">Строительства</option>
+                        <option value="">Телефоны & Аксессуары</option>
+                        <option value="">ТЦ - ТРЦ</option>
+                        <option value="">Услуги</option>
+                        <option value="">Цветы & Подарки</option>
+                        <option value="">Электроника & Бытовая техника</option>
+                        <option value="">Ювелирные изделия</option>
+                        <option value="">Другое</option>
+                    </select>
+                    <p class="filter--txt">Стоимость</p>
+                    <div class="filter--cost d-flex justify-content-start align-items-center">
+                        <span>от</span>
+                        <input class="cost--input" type="tel" placeholder="0">
+                        <span>до</span>
+                        <input class="cost--input" type="tel" placeholder="~">
+                    </div>
+                    <div class="choose--category">Сортировка</div>
+
+                    <div class="radio-item">
+                        <input name="check1" type="radio" id="filter1" checked>
+                        <span></span>
+                        <label for="filter1" class="filter--checkbox">По дате публикации</label>
+                    </div>
+
+                    <div class="radio-item">
+                        <input name="check1" type="radio" id="filter2">
+                        <span></span>
+                        <label for="filter2" class="filter--checkbox">По стоимости товара</label>
+                    </div>
+
+                    <div class="radio-item radio-item--extra">
+                        <input name="check2" type="radio" id="filter3" checked>
+                        <span></span>
+                        <label for="filter3" class="filter--checkbox">По возрастанию</label>
+                    </div>
+
+                    <div class="radio-item">
+                        <input name="check2" type="radio" id="filter4">
+                        <span></span>
+                        <label for="filter4" class="filter--checkbox">По убыванию</label>
+                    </div>
+                    
+                </div>
                 <div class="news--container">
 
                     <h3 class="content--title">Новинки</h3>
                     <div class="row news">
                         <div class="card--block">
-                            <div class="news--card">
-                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                            <div class="card--img">
+                                <div class="news--card">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                </div>
+                                <div class="stock">0%</div>
                             </div>
                             <div class="card--info">
                                 <p class="product--desc">Рубашки мужские</p>
                                 <p class="product--price">1200 сом</p>
                                 <a href="#" class="link--store">Brand Mix</a>
                                 <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
+                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
                             </div>
                         </div>
                         <div class="card--block">
-                            <div class="news--card">
-                                <img class="img-fluid" src="Assets/img/icon/2.jpg" alt="">
+                            <div class="card--img">
+                                <div class="news--card">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                </div>
+                                <div class="stock">0%</div>
                             </div>
                             <div class="card--info">
                                 <p class="product--desc">Рубашки мужские</p>
                                 <p class="product--price">1200 сом</p>
                                 <a href="#" class="link--store">Brand Mix</a>
                                 <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
+                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
                             </div>
                         </div>
                         <div class="card--block">
-                            <div class="news--card">
-                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                            <div class="card--img">
+                                <div class="news--card">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                </div>
+                                <div class="stock">0%</div>
                             </div>
                             <div class="card--info">
                                 <p class="product--desc">Рубашки мужские</p>
                                 <p class="product--price">1200 сом</p>
                                 <a href="#" class="link--store">Brand Mix</a>
                                 <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
+                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
                             </div>
                         </div>
                         <div class="card--block">
-                            <div class="news--card">
-                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                            <div class="card--img">
+                                <div class="news--card">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                </div>
+                                <div class="stock">0%</div>
                             </div>
                             <div class="card--info">
                                 <p class="product--desc">Рубашки мужские</p>
                                 <p class="product--price">1200 сом</p>
                                 <a href="#" class="link--store">Brand Mix</a>
                                 <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
+                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
                             </div>
                         </div>
                         <div class="card--block">
-                            <div class="news--card">
-                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                            <div class="card--img">
+                                <div class="news--card">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                </div>
+                                <div class="stock">0%</div>
                             </div>
                             <div class="card--info">
                                 <p class="product--desc">Рубашки мужские</p>
                                 <p class="product--price">1200 сом</p>
                                 <a href="#" class="link--store">Brand Mix</a>
                                 <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
+                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
                             </div>
                         </div>
                         <div class="card--block">
-                            <div class="news--card">
-                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                            <div class="card--img">
+                                <div class="news--card">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                </div>
+                                <div class="stock">0%</div>
                             </div>
                             <div class="card--info">
                                 <p class="product--desc">Рубашки мужские</p>
                                 <p class="product--price">1200 сом</p>
                                 <a href="#" class="link--store">Brand Mix</a>
                                 <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
+                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
                             </div>
                         </div>
                         <div class="card--block">
-                            <div class="news--card">
-                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                            <div class="card--img">
+                                <div class="news--card">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                </div>
+                                <div class="stock">0%</div>
                             </div>
                             <div class="card--info">
                                 <p class="product--desc">Рубашки мужские</p>
                                 <p class="product--price">1200 сом</p>
                                 <a href="#" class="link--store">Brand Mix</a>
                                 <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
+                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
                             </div>
                         </div>
                         <div class="card--block">
-                            <div class="news--card">
-                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                            <div class="card--img">
+                                <div class="news--card">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                    <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                </div>
+                                <div class="stock">0%</div>
                             </div>
                             <div class="card--info">
                                 <p class="product--desc">Рубашки мужские</p>
                                 <p class="product--price">1200 сом</p>
                                 <a href="#" class="link--store">Brand Mix</a>
                                 <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
+                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
                             </div>
                         </div>
                     </div>
@@ -371,27 +537,25 @@
                         <div class="card--block">
                             <div class="news--card">
                                 <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
                             </div>
                             <div class="card--info">
                                 <p class="product--desc">Рубашки мужские</p>
                                 <p class="product--price">1200 сом</p>
                                 <a href="#" class="link--store">Brand Mix</a>
                                 <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
+                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
                             </div>
                         </div>
                         <div class="card--block">
                             <div class="news--card">
                                 <img class="img-fluid" src="Assets/img/icon/2.jpg" alt="">
-                            </div>
-                            <div class="card--info">
-                                <p class="product--desc">Рубашки мужские</p>
-                                <p class="product--price">1200 сом</p>
-                                <a href="#" class="link--store">Brand Mix</a>
-                                <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
-                            </div>
-                        </div>
-                        <div class="card--block">
-                            <div class="news--card">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
                                 <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
                             </div>
                             <div class="card--info">
@@ -399,10 +563,15 @@
                                 <p class="product--price">1200 сом</p>
                                 <a href="#" class="link--store">Brand Mix</a>
                                 <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
+                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
                             </div>
                         </div>
                         <div class="card--block">
                             <div class="news--card">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
                                 <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
                             </div>
                             <div class="card--info">
@@ -410,10 +579,15 @@
                                 <p class="product--price">1200 сом</p>
                                 <a href="#" class="link--store">Brand Mix</a>
                                 <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
+                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
                             </div>
                         </div>
                         <div class="card--block">
                             <div class="news--card">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
                                 <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
                             </div>
                             <div class="card--info">
@@ -421,10 +595,15 @@
                                 <p class="product--price">1200 сом</p>
                                 <a href="#" class="link--store">Brand Mix</a>
                                 <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
+                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
                             </div>
                         </div>
                         <div class="card--block">
                             <div class="news--card">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
                                 <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
                             </div>
                             <div class="card--info">
@@ -432,10 +611,15 @@
                                 <p class="product--price">1200 сом</p>
                                 <a href="#" class="link--store">Brand Mix</a>
                                 <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
+                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
                             </div>
                         </div>
                         <div class="card--block">
                             <div class="news--card">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
                                 <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
                             </div>
                             <div class="card--info">
@@ -443,10 +627,15 @@
                                 <p class="product--price">1200 сом</p>
                                 <a href="#" class="link--store">Brand Mix</a>
                                 <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
+                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
                             </div>
                         </div>
                         <div class="card--block">
                             <div class="news--card">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
                                 <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
                             </div>
                             <div class="card--info">
@@ -454,6 +643,23 @@
                                 <p class="product--price">1200 сом</p>
                                 <a href="#" class="link--store">Brand Mix</a>
                                 <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
+                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
+                            </div>
+                        </div>
+                        <div class="card--block">
+                            <div class="news--card">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                            </div>
+                            <div class="card--info">
+                                <p class="product--desc">Рубашки мужские</p>
+                                <p class="product--price">1200 сом</p>
+                                <a href="#" class="link--store">Brand Mix</a>
+                                <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
+                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
                             </div>
                         </div>
                     </div>
@@ -464,27 +670,25 @@
                         <div class="card--block">
                             <div class="news--card">
                                 <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
                             </div>
                             <div class="card--info">
                                 <p class="product--desc">Рубашки мужские</p>
                                 <p class="product--price">1200 сом</p>
                                 <a href="#" class="link--store">Brand Mix</a>
                                 <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
+                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
                             </div>
                         </div>
                         <div class="card--block">
                             <div class="news--card">
                                 <img class="img-fluid" src="Assets/img/icon/2.jpg" alt="">
-                            </div>
-                            <div class="card--info">
-                                <p class="product--desc">Рубашки мужские</p>
-                                <p class="product--price">1200 сом</p>
-                                <a href="#" class="link--store">Brand Mix</a>
-                                <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
-                            </div>
-                        </div>
-                        <div class="card--block">
-                            <div class="news--card">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
                                 <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
                             </div>
                             <div class="card--info">
@@ -492,10 +696,15 @@
                                 <p class="product--price">1200 сом</p>
                                 <a href="#" class="link--store">Brand Mix</a>
                                 <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
+                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
                             </div>
                         </div>
                         <div class="card--block">
                             <div class="news--card">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
                                 <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
                             </div>
                             <div class="card--info">
@@ -503,10 +712,15 @@
                                 <p class="product--price">1200 сом</p>
                                 <a href="#" class="link--store">Brand Mix</a>
                                 <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
+                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
                             </div>
                         </div>
                         <div class="card--block">
                             <div class="news--card">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
                                 <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
                             </div>
                             <div class="card--info">
@@ -514,10 +728,15 @@
                                 <p class="product--price">1200 сом</p>
                                 <a href="#" class="link--store">Brand Mix</a>
                                 <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
+                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
                             </div>
                         </div>
                         <div class="card--block">
                             <div class="news--card">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
                                 <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
                             </div>
                             <div class="card--info">
@@ -525,10 +744,15 @@
                                 <p class="product--price">1200 сом</p>
                                 <a href="#" class="link--store">Brand Mix</a>
                                 <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
+                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
                             </div>
                         </div>
                         <div class="card--block">
                             <div class="news--card">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
                                 <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
                             </div>
                             <div class="card--info">
@@ -536,10 +760,15 @@
                                 <p class="product--price">1200 сом</p>
                                 <a href="#" class="link--store">Brand Mix</a>
                                 <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
+                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
                             </div>
                         </div>
                         <div class="card--block">
                             <div class="news--card">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
                                 <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
                             </div>
                             <div class="card--info">
@@ -547,6 +776,23 @@
                                 <p class="product--price">1200 сом</p>
                                 <a href="#" class="link--store">Brand Mix</a>
                                 <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
+                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
+                            </div>
+                        </div>
+                        <div class="card--block">
+                            <div class="news--card">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                                <img class="img-fluid" src="Assets/img/icon/1.jpg" alt="">
+                            </div>
+                            <div class="card--info">
+                                <p class="product--desc">Рубашки мужские</p>
+                                <p class="product--price">1200 сом</p>
+                                <a href="#" class="link--store">Brand Mix</a>
+                                <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
+                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
                             </div>
                         </div>
                     </div>
@@ -557,6 +803,7 @@
     </section>
 
     <script src="Assets/js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js" integrity="sha512-+m6t3R87+6LdtYiCzRhC5+E0l4VQ9qIT1H9+t1wmHkMJvvUQNI5MKKb7b08WL4Kgp9K0IBgHDSLCRJk05cFUYg==" crossorigin="anonymous"></script>
     <script src="Assets/js/slick.min.js"></script>
     <script src="Assets/js/main.js"></script>
 </body>

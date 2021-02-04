@@ -279,14 +279,131 @@ ul li {
       width: 100%;
   }
   .filter {
-      width: 16%;
-      font-family: 'Intro-Bold';
+      margin-right: 20px;
       text-align: left;
       padding: 2px 10px;
-      background-color: yellow;
+      width: 20%;
+      background-color: transparent;
   }
+  .filter--title {
+      font-family: 'Intro-Bold';
+      font-size: 20px;
+      color: #222;
+      padding-bottom: 14px;
+  }
+  .keyword {
+      font-family: 'Roboto-Regular';
+      font-size: 15px;
+      width: 100%;
+      color: #222;
+      padding: 4px;
+      border: 1px solid #1a72a5;
+      border-radius: 7px;
+      margin: 4px 0;
+  }
+  .keyword::placeholder {
+    font-family: 'Roboto-Regular';
+    font-size: 15px;
+    color: #222;
+    padding: 4px;
+  } 
+  .keyword:focus {
+      outline: none;
+  }
+  #choose--region:focus {
+      outline: none;
+  }
+  .filter--txt {
+    font-family: 'Roboto-Regular';
+    font-size: 13px;
+    color: #222;
+    padding: 20px 0 3px;
+  }
+  #choose--region {
+    font-family: 'Intro-Bold';
+    font-size: 13px;
+    color: #1a72a5;
+    padding: 5px 0 10px; 
+    margin: 3px 0;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #1a72a5;
+  }
+  .filter--cost {
+      padding-bottom: 4px;
+      border-bottom: 1px solid #1a72a5;
+  }
+  .cost--input {
+      width: 40px;
+      border: none;
+      margin: 0 10px;
+      text-align: center;
+  }
+  .cost--input:focus {
+      outline: none;
+  }
+  .choose--category {
+      font-family: 'Intro-Bold';
+      font-size: 16px;
+      padding: 24px 0 0;
+      text-align: center;
+      color: #1a72a5;
+  }
+
+
+  .radio-item {
+    position: relative;
+    padding: 0 6px;
+    margin: 8px 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .radio-item input[type='radio'] {
+    display: none;
+  }
+  .radio--item__extra {
+      margin: 26px 0;
+      width: auto;
+  }
+  .filter--checkbox {
+    font-family: 'Roboto-Regular';
+    font-size: 13px;
+    color: #222;
+    line-height: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+  .radio-item span {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: 0;
+    margin: 0 5px 0 0;
+    min-width: 12px;
+    height: 12px;
+    border-radius: 11px;
+    border: 2px solid #1a72a5;
+    background-color: transparent;
+  }
+  .radio-item input[type=radio]:checked + span:after {
+    border-radius: 11px;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    content: " ";
+    display: block;
+    background: #1a72a5;
+  }
+  .radio-item--extra {
+      padding-top: 14px;
+  }
+
   .news--container {
-      width: 82%;
+      width: 80%;
   }
   .news {
       justify-content: space-between;
@@ -296,6 +413,7 @@ ul li {
     margin: 0 7px 50px;
   }
   .card--info {
+      line-height: 16px;
       text-align: center;
   }
   .news--card {
@@ -303,6 +421,33 @@ ul li {
       height: 200px;
       text-align: center;
       border: 1px solid rgb(230, 229, 229);
+      border-radius: 8px;
+      overflow: hidden;
+  }
+  .card--img {
+      position: relative;
+  }
+  .stock {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-radius: 4px;
+      font-family: 'Intro-Bold';
+      font-size: 13px;
+      color: #fff;
+      padding: 3px 14px 2px;
+      background-color: #f91155;
+  }
+  .news--card img:focus {
+      outline: none;
+  }
+  .news--card .slick-dots li button:before {
+      font-size: 18px;
+      color: #1a72a5;
+  }
+  .news--card .slick-dots li {
+      margin: 0;
+      width: 15px;
   }
   .news--card img {
       width: 200px;
@@ -322,7 +467,7 @@ ul li {
   .link--store {
       font-family: 'OpenSans-Regular';
       font-size: 14px;
-      
+      line-height: 20px;
   }
   .add--kurjun {
       font-family: 'Intro-Bold';
@@ -331,13 +476,25 @@ ul li {
       padding: 2px 5px;
       width: 100%;
       background: #1a72a5;
+      border-radius: 4px;
       border: none;
+      margin-top: 4px;
+      transition: .1s;
+  }
+  .add--kurjun:hover {
+      background-color: #3c8fbe;
   }
   .add--kurjun span {
       font-family: 'OpenSans-Regular';
   }
   .add--kurjun:focus {
       outline: none;
+  }
+  .buy--now {
+      background-color: #02c212;
+  }
+  .buy--now:hover {
+      background-color: #4ed859;
   }
   .more--btn {
       font-family: 'Intro-Bold';
@@ -358,4 +515,8 @@ ul li {
   .products--cont .content--title {
       text-align: left;
       padding: 0 0 12px;
+  }
+  #popup {
+      width: 300px;
+      display: none !important;
   }
