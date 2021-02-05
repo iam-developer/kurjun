@@ -37,9 +37,12 @@ $(document).ready(function() {
     });
 
     // Popup:
-    $('.popup--img1').click(function() {
-        $('#popup').css('displa', 'block');
+    $('.news--card').magnificPopup({
+        type: 'image',
+        delegate: 'a',
+        gallery: {
+            enabled: false,
+        }
     });
-    $('.popup-link').magnificPopup();
 });
 
