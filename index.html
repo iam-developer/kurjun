@@ -12,10 +12,6 @@
     <title>Kurjun-Invest - Объединенная Торговая Online Площадка. Все магазины и услуги в одном приложении</title>
 </head>
 <body>
-    <!-- <a href="#popup"  class="popup-link">Открыть попап</a>
-    <div id="popup" class="mfp-hide">
-        <img src="Assets/img/icon/1.jpg" class="img-fluid" alt="">
-    </div> -->
     <div class="soc--links d-flex justify-content-end align-items-center">
         <a class="soc--icon1" href="#"><img class="icon--img" src="Assets/img/social_icons/whastapp.png" alt=""></a>
         <a class="soc--icon2" href="#"><img class="icon--img" src="Assets/img/social_icons/instagram.png" alt=""></a>
@@ -23,6 +19,16 @@
         <a class="soc--icon4" href="#"><img class="icon--img" src="Assets/img/social_icons/youtube.png" alt=""></a>
     </div>
     <header id="header" class="screen">
+        <!-- <div class="download--app d-flex">
+            <a class="download--link d-flex justify-content-between align-items-center" href="#">
+                <img class="" src="Assets/img/icon/ios.png" alt="">
+                <p class="app--download--txt">DOWNLOAD ON THE<br><span>APP STORE</span></p>
+            </a>
+            <a class="download--link d-flex justify-content-between align-items-center" href="#">
+                <img class="" src="Assets/img/icon/google.png" alt="">
+                <p class="app--download--txt">GET IT ON<br><span>GOOGLE PLAY</span></p>
+            </a>
+        </div> -->
         <div class="container top--nav">
             <div class="menu d-flex justify-content-center align-items-center">
                 <ul class="d-flex">
@@ -40,9 +46,17 @@
                     <input class="searh--input" type="text">
                     <span><img src="Assets/img/social_icons/search.png" class="search--icon" alt=""></span>
                 </div>
-                <div class="register d-flex justify-content-center align-items-center">
-                    <a href="#">Регистрация&nbsp;&nbsp;</a>|
-                    <a href="#">&nbsp;&nbsp;Войти</a>
+                <div class="korzina">
+                    <a href="#">
+                        <img class="korzina--img" src="Assets/img/icon/profile.png" alt="Профиль">
+                        <br><span class="korzina--txt">Профиль</span>
+                    </a>
+                </div>
+                <div class="korzina">
+                    <a href="#">
+                        <img class="korzina--img" src="Assets/img/icon/izbrannoe.png" alt="Избранное">
+                        <br><span class="korzina--txt">Избранное</span>
+                    </a>
                 </div>
                 <div class="korzina">
                     <a href="#">
@@ -58,28 +72,24 @@
     </header>
 
     <section id="content" class="screen">
-        <div class="container">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                <div class="advertising">
-                    <div class="advertising--item">
-                        <img class="img-fluid" src="Assets/img/banner/banner2.png" alt="">
-                    </div>
-                    <div class="advertising--item">
-                        <img class="img-fluid" src="Assets/img/banner/banner2.png" alt="">
-                    </div>
-                    <div class="advertising--item">
-                        <img class="img-fluid" src="Assets/img/banner/banner2.png" alt="">
-                    </div>
-                    <div class="advertising--item">
-                        <img class="img-fluid" src="Assets/img/banner/banner2.png" alt="">
-                    </div>
-                    <div class="advertising--item">
-                        <img class="img-fluid" src="Assets/img/banner/banner2.png" alt="">
-                    </div>
-                    <div class="advertising--item">
-                        <img class="img-fluid" src="Assets/img/banner/banner2.png" alt="">
-                    </div>
-                </div>
+        <div class="advertising">
+            <div class="advertising--item">
+                <img class="img-fluid" src="Assets/img/banner/banner2.png" alt="">
+            </div>
+            <div class="advertising--item">
+                <img class="img-fluid" src="Assets/img/banner/banner2.png" alt="">
+            </div>
+            <div class="advertising--item">
+                <img class="img-fluid" src="Assets/img/banner/banner2.png" alt="">
+            </div>
+            <div class="advertising--item">
+                <img class="img-fluid" src="Assets/img/banner/banner2.png" alt="">
+            </div>
+            <div class="advertising--item">
+                <img class="img-fluid" src="Assets/img/banner/banner2.png" alt="">
+            </div>
+            <div class="advertising--item">
+                <img class="img-fluid" src="Assets/img/banner/banner2.png" alt="">
             </div>
         </div>
     </section>
@@ -277,7 +287,7 @@
             <div class="products--container d-flex justify-content-between align-items-start">
                 <div class="filter">
                     <h3 class="filter--title">Фильтры</h3>
-                    <input class="keyword" type="text" placeholder="Ключевое слово">
+                    <input class="keyword" type="text" placeholder="Что ищете?">
                     <p class="filter--txt">Выберите область</p>
                     <select name="" id="choose--region">
                         <option value="">Выберите область</option>
@@ -371,6 +381,8 @@
                         <span></span>
                         <label for="filter4" class="filter--checkbox">По убыванию</label>
                     </div>
+
+                    <button class="filter--btn">Применить фильтр</button>
                     
                 </div>
                 <div class="news--container">
@@ -380,11 +392,11 @@
                         <div class="card--block">
                             <div class="card--img">
                                 <div class="news--card">
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
                                 </div>
                                 <div class="stock">0%</div>
                             </div>
@@ -399,11 +411,11 @@
                         <div class="card--block">
                             <div class="card--img">
                                 <div class="news--card">
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
                                 </div>
                                 <div class="stock">0%</div>
                             </div>
@@ -418,11 +430,11 @@
                         <div class="card--block">
                             <div class="card--img">
                                 <div class="news--card">
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
                                 </div>
                                 <div class="stock">0%</div>
                             </div>
@@ -437,87 +449,11 @@
                         <div class="card--block">
                             <div class="card--img">
                                 <div class="news--card">
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                </div>
-                                <div class="stock">0%</div>
-                            </div>
-                            <div class="card--info">
-                                <p class="product--desc">Рубашки мужские</p>
-                                <p class="product--price">1200 сом</p>
-                                <a href="#" class="link--store">Brand Mix</a>
-                                <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
-                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
-                            </div>
-                        </div>
-                        <div class="card--block">
-                            <div class="card--img">
-                                <div class="news--card">
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                </div>
-                                <div class="stock">0%</div>
-                            </div>
-                            <div class="card--info">
-                                <p class="product--desc">Рубашки мужские</p>
-                                <p class="product--price">1200 сом</p>
-                                <a href="#" class="link--store">Brand Mix</a>
-                                <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
-                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
-                            </div>
-                        </div>
-                        <div class="card--block">
-                            <div class="card--img">
-                                <div class="news--card">
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                </div>
-                                <div class="stock">0%</div>
-                            </div>
-                            <div class="card--info">
-                                <p class="product--desc">Рубашки мужские</p>
-                                <p class="product--price">1200 сом</p>
-                                <a href="#" class="link--store">Brand Mix</a>
-                                <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
-                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
-                            </div>
-                        </div>
-                        <div class="card--block">
-                            <div class="card--img">
-                                <div class="news--card">
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                </div>
-                                <div class="stock">0%</div>
-                            </div>
-                            <div class="card--info">
-                                <p class="product--desc">Рубашки мужские</p>
-                                <p class="product--price">1200 сом</p>
-                                <a href="#" class="link--store">Brand Mix</a>
-                                <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
-                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
-                            </div>
-                        </div>
-                        <div class="card--block">
-                            <div class="card--img">
-                                <div class="news--card">
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
                                 </div>
                                 <div class="stock">0%</div>
                             </div>
@@ -537,11 +473,11 @@
                         <div class="card--block">
                             <div class="card--img">
                                 <div class="news--card">
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
                                 </div>
                                 <div class="stock">0%</div>
                             </div>
@@ -556,11 +492,11 @@
                         <div class="card--block">
                             <div class="card--img">
                                 <div class="news--card">
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
                                 </div>
                                 <div class="stock">0%</div>
                             </div>
@@ -575,11 +511,11 @@
                         <div class="card--block">
                             <div class="card--img">
                                 <div class="news--card">
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
                                 </div>
                                 <div class="stock">0%</div>
                             </div>
@@ -594,87 +530,11 @@
                         <div class="card--block">
                             <div class="card--img">
                                 <div class="news--card">
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                </div>
-                                <div class="stock">0%</div>
-                            </div>
-                            <div class="card--info">
-                                <p class="product--desc">Рубашки мужские</p>
-                                <p class="product--price">1200 сом</p>
-                                <a href="#" class="link--store">Brand Mix</a>
-                                <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
-                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
-                            </div>
-                        </div>
-                        <div class="card--block">
-                            <div class="card--img">
-                                <div class="news--card">
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                </div>
-                                <div class="stock">0%</div>
-                            </div>
-                            <div class="card--info">
-                                <p class="product--desc">Рубашки мужские</p>
-                                <p class="product--price">1200 сом</p>
-                                <a href="#" class="link--store">Brand Mix</a>
-                                <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
-                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
-                            </div>
-                        </div>
-                        <div class="card--block">
-                            <div class="card--img">
-                                <div class="news--card">
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                </div>
-                                <div class="stock">0%</div>
-                            </div>
-                            <div class="card--info">
-                                <p class="product--desc">Рубашки мужские</p>
-                                <p class="product--price">1200 сом</p>
-                                <a href="#" class="link--store">Brand Mix</a>
-                                <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
-                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
-                            </div>
-                        </div>
-                        <div class="card--block">
-                            <div class="card--img">
-                                <div class="news--card">
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                </div>
-                                <div class="stock">0%</div>
-                            </div>
-                            <div class="card--info">
-                                <p class="product--desc">Рубашки мужские</p>
-                                <p class="product--price">1200 сом</p>
-                                <a href="#" class="link--store">Brand Mix</a>
-                                <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
-                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
-                            </div>
-                        </div>
-                        <div class="card--block">
-                            <div class="card--img">
-                                <div class="news--card">
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
                                 </div>
                                 <div class="stock">0%</div>
                             </div>
@@ -694,11 +554,11 @@
                         <div class="card--block">
                             <div class="card--img">
                                 <div class="news--card">
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
                                 </div>
                                 <div class="stock">0%</div>
                             </div>
@@ -713,11 +573,11 @@
                         <div class="card--block">
                             <div class="card--img">
                                 <div class="news--card">
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
                                 </div>
                                 <div class="stock">0%</div>
                             </div>
@@ -732,11 +592,11 @@
                         <div class="card--block">
                             <div class="card--img">
                                 <div class="news--card">
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
                                 </div>
                                 <div class="stock">0%</div>
                             </div>
@@ -751,87 +611,11 @@
                         <div class="card--block">
                             <div class="card--img">
                                 <div class="news--card">
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                </div>
-                                <div class="stock">0%</div>
-                            </div>
-                            <div class="card--info">
-                                <p class="product--desc">Рубашки мужские</p>
-                                <p class="product--price">1200 сом</p>
-                                <a href="#" class="link--store">Brand Mix</a>
-                                <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
-                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
-                            </div>
-                        </div>
-                        <div class="card--block">
-                            <div class="card--img">
-                                <div class="news--card">
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                </div>
-                                <div class="stock">0%</div>
-                            </div>
-                            <div class="card--info">
-                                <p class="product--desc">Рубашки мужские</p>
-                                <p class="product--price">1200 сом</p>
-                                <a href="#" class="link--store">Brand Mix</a>
-                                <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
-                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
-                            </div>
-                        </div>
-                        <div class="card--block">
-                            <div class="card--img">
-                                <div class="news--card">
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                </div>
-                                <div class="stock">0%</div>
-                            </div>
-                            <div class="card--info">
-                                <p class="product--desc">Рубашки мужские</p>
-                                <p class="product--price">1200 сом</p>
-                                <a href="#" class="link--store">Brand Mix</a>
-                                <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
-                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
-                            </div>
-                        </div>
-                        <div class="card--block">
-                            <div class="card--img">
-                                <div class="news--card">
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                </div>
-                                <div class="stock">0%</div>
-                            </div>
-                            <div class="card--info">
-                                <p class="product--desc">Рубашки мужские</p>
-                                <p class="product--price">1200 сом</p>
-                                <a href="#" class="link--store">Brand Mix</a>
-                                <button class="add--kurjun"><span>Добавить в</span> kurjun</button>
-                                <button class="add--kurjun buy--now"><span>Купить</span> сейчас</button>
-                            </div>
-                        </div>
-                        <div class="card--block">
-                            <div class="card--img">
-                                <div class="news--card">
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
-                                    <a href="Assets/img/icon/1.jpg"><img class="img-fluid" src="Assets/img/icon/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
+                                    <a href="Assets/img/products/1.jpg"><img class="img-fluid" src="Assets/img/products/1.jpg" alt=""></a>
                                 </div>
                                 <div class="stock">0%</div>
                             </div>
@@ -849,6 +633,44 @@
             </div>
         </div>
     </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col-lg-2">
+                    <a href="./">
+                        <img src="Assets/img/logo/logo4.png" class="img-fluid" alt="Footer logo">
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <p class="footer--address">
+                        г. Бишкек, улица Манаса, дом 56, строение 26, офис 304<br/>
+                        время работы:<br/>
+                        ПН.-ПТ. С 90:00 ДО 19:00
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer--contacts text-center">
+                        <a class="footer--link" href="#">+996 (700)-000-000</a>
+                        <a class="footer--link" href="#">email@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 btns">
+                    <!-- <div class="download--app">
+                        <a class="download--link d-flex justify-content-between align-items-center" href="#">
+                            <img class="" src="Assets/img/icon/ios.png" alt="">
+                            <p class="app--download--txt">DOWNLOAD ON THE<br><span>APP STORE</span></p>
+                        </a>
+                        <a class="download--link d-flex justify-content-between align-items-center" href="#">
+                            <img class="" src="Assets/img/icon/google.png" alt="">
+                            <p class="app--download--txt">GET IT ON<br><span>GOOGLE PLAY</span></p>
+                        </a>
+                    </div> -->
+                    <a href="./privacy-policy/" class="privacy--policy">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="Assets/js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js" integrity="sha512-+m6t3R87+6LdtYiCzRhC5+E0l4VQ9qIT1H9+t1wmHkMJvvUQNI5MKKb7b08WL4Kgp9K0IBgHDSLCRJk05cFUYg==" crossorigin="anonymous"></script>

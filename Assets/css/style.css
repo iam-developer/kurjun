@@ -99,6 +99,7 @@ ul li {
   /* Главная страница */
   #header {
       background-color: #fff;
+      position: relative;
   }
   .top--nav {
       position: relative;
@@ -113,8 +114,9 @@ ul li {
   .menu--item {
     font-family: 'GTEestiProDisplay-Regular';
     font-size: 15px;
+    color: #6e6d6d;
+    transition: .3s;
     margin: 0 4px;
-    color: #222;
     padding: 3px 18px;
     background: #fff;
     transition: .3s;
@@ -201,12 +203,6 @@ ul li {
   .advertising .slick-dots li {
       margin: 0 2px;
   }
-  .advertising  .left__arrow {
-      left: -40px;
-  }
-  .advertising  .right__arrow {
-    right: -40px;
-}
   /* Categories */
   #categories {
       padding-bottom: 0;
@@ -257,7 +253,10 @@ ul li {
     top: 50%;
     left: -20px;
     cursor: pointer;
-    width: 22px;
+    width: 45px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+    padding: 10px;
     transform: translate(0%, -50%);
   }
   .right__arrow {
@@ -265,12 +264,27 @@ ul li {
       top: 50%;
       right: -20px;
       cursor: pointer;
-      width: 22px;
+      width: 45px;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0 0 20px rgb(255, 255, 255);
+      padding: 10px;
       transform: translate(0%, -50%);
   }
-  .categories--slider .slick-dots li button:before {
-      font-size: 24px;
-  }
+    .categories--slider .slick-dots li button:before {
+        font-size: 24px;
+    }
+    .advertising  .left__arrow {
+        top: auto;
+        bottom: 10px;
+        right: 120px;
+        left: auto;
+        z-index: 99;
+    }
+    .advertising  .right__arrow {
+        top: auto;
+        bottom: 10px;
+        right: 40px;
+    }
   /* Products */
   #products {
       padding-top: 40px;
@@ -304,7 +318,7 @@ ul li {
   .keyword::placeholder {
     font-family: 'Roboto-Regular';
     font-size: 15px;
-    color: #222;
+    color: rgb(211, 208, 208);
     padding: 4px;
   } 
   .keyword:focus {
@@ -401,7 +415,24 @@ ul li {
   .radio-item--extra {
       padding-top: 14px;
   }
-
+  .filter--btn {
+      font-family: 'Intro-Bold';
+      background-color: #1a72a5;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      padding: 2px 4px;
+      width: 100%;
+      color: #fff;
+      margin-top: 20px;
+      transition: .2s;
+  }
+  .filter--btn:hover {
+      background-color: #3c8fbe;
+  }
+  .filter--btn:focus {
+      outline: none;
+  }
   .news--container {
       width: 80%;
   }
@@ -425,6 +456,8 @@ ul li {
   }
   .news--card img {
       object-fit: fill;
+      border-radius: 8px;
+      background-color: transparent;
   }
   .card--img {
       position: relative;
@@ -502,7 +535,11 @@ ul li {
       background: transparent;
       color: rgb(105, 103, 103);
       text-align: right;
+      transition: .3s;
       margin:0 10px 30px 0;
+  }
+  .more--btn:hover {
+      color: #222;
   }
   .more--btn:focus {
       outline: none;
@@ -512,10 +549,107 @@ ul li {
   }
   .products--cont .content--title {
       text-align: left;
-      padding: 0 0 12px;
+      padding: 0 0 15px;
   }
   #popup {
       width: 300px;
       display: none !important;
   }
  
+  /* Footer */
+  #footer {
+      max-width: 1920px;
+      margin: 0 auto;
+      padding: 30px 0;
+      background-color: #3c8fbe;
+  }
+  .footer--address {
+      font-family: 'Roboto-Regular';
+      font-size: 16px;
+      color: #fff;
+      opacity: .9;
+      padding-top: 7px;
+  }
+  .footer--link {
+      font-family: 'Roboto-Regular';
+      font-size: 16px;
+      color: #fff;
+      opacity: .8;
+      transition: .3s;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 2px;
+      margin-bottom: 5px;
+  }
+  .footer--link:hover {
+      opacity: 1;
+      color: #fff;
+  }
+  .footer--contacts {
+      line-height: 34px;
+  }
+  .download--app {
+      position: absolute;
+      right: 0;
+      z-index: 99;
+  }
+  .download--link {
+      background-color: #222;
+      padding: 4px 10px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      height: 36px;
+      width: 123px;
+      margin-left: 20px;
+  }
+  .download--link img {
+      width: 22%;
+  }
+  .app--download--txt {
+      font-family: 'Intro-Bold';
+      font-size: 8px;
+      color: #fff;
+  }
+  .app--download--txt span {
+      font-size: 10px;
+  }
+  .btns {
+      text-align: -webkit-right;
+  }
+  .privacy--policy {
+      font-family: 'Roboto-Regular';
+      font-size: 16px;
+      color: #fff;
+      text-decoration: underline;
+  }
+  .privacy--policy:hover {
+      color: #fff;
+      text-decoration: none;
+  }
+  /* Страница конфиденциальности */
+  #privacy--policy {
+      max-width: 1920px;
+      margin: 0 auto;
+  }
+  .privacy--header {
+      font-family: 'GTEestiProDisplay-Regular';
+      color: #000;
+      padding: 40px 0 20px;
+  }
+  .privacy--title {
+      font-family: 'GTEestiProDisplay-Regular';
+      color: #000;
+      padding: 0 0 10px;
+      text-decoration: underline;
+      font-size: 19px;
+      padding: 20px 0;
+  }
+  .privacy--text {
+      font-family: 'Roboto-Regular';
+      font-size: 16px;
+      color: #000;
+      line-height: 28px;
+      padding: 10px 0;
+  }
+  .privacy--subtitle {
+      font-family: 'Intro-Bold';
+  }
