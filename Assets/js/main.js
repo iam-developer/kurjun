@@ -33,6 +33,8 @@ $(document).ready(function() {
         arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1,
+        row: 0,
+        infinity: false,
         adaptiveHeight: true,
     });
 
@@ -40,9 +42,34 @@ $(document).ready(function() {
     $('.news--card').magnificPopup({
         type: 'image',
         delegate: 'a',
+        infinity: false,
         gallery: {
             enabled: true,
         }
     });
+    // Catalog button:
+    $('.catalog__btn').click(function() {
+        $('.catalog__line2').toggleClass('catalog__line2__active');
+        $('.catalog__line1').toggleClass('catalog__line1__active');
+        $('.catalog__line3').toggleClass('catalog__line3__active');
+        $('#catalog').toggleClass('active');
+    });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
