@@ -23,7 +23,10 @@
     font-family: 'Roboto-Regular';
     src: url(../fonts/Roboto-Regular.ttf);
 }
-
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
 body {
     margin: 0;
     padding: 0;
@@ -428,8 +431,6 @@ ul li {
       text-align: center;
       color: #1a72a5;
   }
-
-
   .radio-item {
     position: relative;
     padding: 0 6px;
@@ -786,13 +787,213 @@ ul li {
   .privacy--subtitle {
       font-family: 'Intro-Bold';
   }
-
-
-
-
-
-
-
-
-
-
+  /* Страница "Карточка товара": */
+  #product .product-header {
+    font-family: 'Roboto-Regular';
+    font-size: .867em;
+    color: #b6b5b5;
+    transition: .2s;
+  }
+  #product .line {
+    width: 16px;
+    height: 1px;
+    background-color: #b6b5b5;
+    margin: 0 20px;
+  }
+ #product .product-header-link {
+     color: #8f8e8e;
+ }
+ #product .product-header-link:hover {
+     color: #333232;
+ }
+.product-name {
+    font-family: 'Intro-Bold';
+    font-size: 30px;
+    color: #333;
+    margin: 20px 0 40px;
+}
+.product-name span {
+    color: #f91155;
+}
+.product-slider-extra {
+    height: 100% !important;
+    text-align: center;
+}
+.product-item-extra {
+    width: 60px !important;
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 1px;
+}
+.product-item-extra:first-child {
+    margin-top: 0;
+}
+.product-item-extra:focus {
+    outline: none;
+}
+.product-item-extra.active {
+    border: 1px solid #3c8fbe;
+}
+.product-slider {
+    width: 410px;
+    margin-left: 20px;
+}
+.product-item {
+    display: none;
+}
+.product-item.active {
+    display: block;
+}
+.product-item:focus {
+    outline: none;
+}
+.product-item img {
+    border: 1px solid #c5c3c3;
+}
+.product-character {
+    font-family: 'Intro-Bold';
+    font-size: 24px;
+    color: #222;
+    padding: 4px 20px 0 0;
+}
+.zvezdochki.active {
+    fill: #e6c553;
+    stroke: #e6c553;
+}
+.zvezdochki {
+    fill: transparent;
+    cursor: pointer;
+    fill-rule: evenodd;
+    stroke: #999999;
+}
+svg .zvezdochka {
+    fill-opacity: 0;
+}
+.aa.active-hover,
+.bb.active-hover,
+.cc.active-hover,
+.dd.active-hover {
+    fill: #e6c553;
+    stroke: #e6c553;
+}
+.zvezd1:hover {
+    fill: #e6c553;
+    stroke: #e6c553;
+}
+.like-svg {
+    color: #999999;
+    cursor: pointer;
+    transition: .3s;
+}
+.like-svg:hover {
+    color: #f91155 !important;
+}
+.like-svg-checked {
+    display: none;
+}
+.rating-svg {
+    margin-left: 14px;
+    width: 20px;
+    height: 24px;
+    transition: .3s;
+    cursor: pointer;
+    fill: #999999;
+}
+.rating-svg:hover {
+    fill: #3a96cc;
+}
+.rating-svg.active {
+    fill: #3a96cc;
+}
+.share-svg {
+    margin-left: 14px;
+    fill: #999999;
+    cursor: pointer;
+}
+.cost {
+    font-family: 'Intro-Bold';
+    font-size: 40px;
+    color: #222;
+}
+.cost strike {
+    font-family: 'Intro-Regular';
+    font-size: 24px;
+    color: #777777;
+    padding-left: 14px;
+}
+.cost-cont {
+    padding-top: 10px;
+    width: 100%;
+}
+.cost-stock {
+    font-family: 'Roboto-Regular';
+    font-size: 20px;
+    padding: 4px 20px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #D1324C;
+}
+.character {
+    padding-top: 20px;
+    font-family: 'Intro-Bold';
+    color: #222;
+    font-size: 27px;
+}
+.product-info {
+    padding-top: 14px;
+    width: 100%;
+}
+.product-char {
+    font-family: 'Montserrat-Medium';
+    color: #6e6d6d;
+    font-size: 14px;
+    width: 50%;
+    position: relative;
+}
+.product-char::before {
+    content: "";
+    display: block;
+    left: 0;
+    bottom: .2em;
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px dotted #d6dbe0;
+}
+.product-char-text {
+    font-family: 'Montserrat-Medium';
+    color: #222;
+    font-size: 14px;
+    padding-left: 12px;
+    width: 50%;
+}
+.product-btns {
+    width: 100%;
+}
+.prod-btn {
+    font-family: 'Intro-Bold';
+    font-size: 18px;
+    color: #fff;
+    background-color: #3a96cc;
+    padding: 10px 30px;
+    width: 49%;
+    border: 1px solid #3a96cc;
+    margin: 40px 0;
+    border-radius: 3px;
+    transition: .1s;
+}
+.prod-btn:hover {
+    background-color: #67b4e0;
+}
+.prod-btn:focus {
+    outline: none;
+}
+.buy-one-click {
+    background-color: transparent;
+    color: #3a96cc;
+}
+.buy-one-click:hover {
+    background-color: transparent;
+}
+.rec-title {
+    padding: 26px 0;
+}
